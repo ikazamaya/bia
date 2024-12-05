@@ -12,7 +12,7 @@ RUN npm install --loglevel=error
 
 COPY . .
 
-RUN NODE_OPTIONS=--openssl-legacy-provider REACT_APP_API_URL=http://98.82.58.37 SKIP_PREFLIGHT_CHECK=true npm run build --prefix client
+RUN NODE_OPTIONS=--openssl-legacy-provider REACT_APP_API_URL=http://34.202.18.44 SKIP_PREFLIGHT_CHECK=true npm run build --prefix client
 
 RUN mv client/build build
 
